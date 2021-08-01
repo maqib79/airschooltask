@@ -15,16 +15,13 @@
                     @endif
                     <div class="container">
                         <div class="row">
-                            {{-- @foreach ($videos as $video) --}}
+                            @foreach ($videos as $video)
                                 <div class="col-4">
-                                    <video id="my_video_1" class="vjs-default-skin" controls preload="auto" width="640" height="268">
-                                        <source src="https://d2zihajmogu5jn.cloudfront.net/bipbop-advanced/bipbop_16x9_variant.m3u8" type="application/x-mpegURL">
-                                      </video>
-                                    {{-- <video class="embed-responsive embed-responsive-16by9" controls>
+                                    <video class="embed-responsive embed-responsive-16by9" controls>
                                         <source src="{{asset('converted_videos/'.$video->video)}}" type="video/m3u8">
-                                    </video> --}}
+                                    </video>
                                 </div>
-                            {{-- @endforeach --}}
+                            @endforeach
                         </div>
                     </div>
                     
